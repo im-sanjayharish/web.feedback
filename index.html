@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Bug Reports</a></li>
+          <li><a href="#">Feature Requests</a></li>
+          <li><a href="#">User Suggestions</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section class="feedback-form">
+        <h1>Submit Your Feedback</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option value="bug">Bug Reports</option>
+            <option value="feature">Feature Requests</option>
+            <option value="suggestion">Suggestions</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Enter your feedback" required></textarea>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+
+      <section class="analytics">
+        <h1>Feedback Analytics</h1>
+        <!-- Placeholder for analytics content -->
+        <div class="chart-placeholder">
+          <p>Analytics charts will appear here.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
